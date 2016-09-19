@@ -18,6 +18,7 @@ gulp.task('html', function () {
 });
 //работа с сss
 gulp.task('css', function () {
+  gulp.src('./app/css/*.css')
   gulp.src('./app/css/*/*.css')
     .pipe(connect.reload());
 });
@@ -31,6 +32,7 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
   gulp.watch(['./app/*.html'], ['html']);
   gulp.watch(['./app/css/*/*.css'], ['css']);
+  gulp.watch(['./app/css/*.css'], ['css']);
   gulp.watch(['./app/js/*.js'], ['js']);
 });
 //задача по умолчанию

@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>site-portfolio</title>
+	<!--fonts -->
+	<link rel="stylesheet" href="css/font/firasans.css">
+	<link rel="stylesheet" href="css/font/fontawesome.css">
+	<!-- layout-->
+	<link rel="stylesheet" href="css/layout/adjustment.css">
+	<!-- sections-->
+	<link rel="stylesheet" href="css/sections/header.css">
+	<link rel="stylesheet" href="css/sections/content.css">
+	<link rel="stylesheet" href="css/sections/sidebar.css">
+	<link rel="stylesheet" href="css/sections/footer.css">
+	<!-- main-->
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>New Docs</h1>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="heade__left">
+					<div class="human">
+						<img src="img/content/my_foto.jpg" alt="my foto" class="human__foto">
+						<span class="human__name">Игорь Соловьёв</span>
+					</div>
+				</div>
+				<div class="header__right">
+					<a href="#" class="contact__link">Мои контакты</a>
+					<ul class="contact__list">
+						<li class="contact__list-item"><a href="#" class="contact__list-link"></a></li>
+						<li class="contact__list-item"><a href="#" class="contact__list-link"></a></li>
+						<li class="contact__list-item"><a href="#" class="contact__list-link"></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="section">
+			<div class="container">
+				<aside class="aside">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">
+								<i class="fa fa-user-secret" aria-hidden="true"></i>
+									Обо мне
+								</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">
+								<i class="fa fa-rocket" aria-hidden="true"></i>	
+									Карьерный путь
+								</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">
+								<i class="fa fa-briefcase" aria-hidden="true"></i>
+									Портфолио
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+				<main class="main">
+					<div class="main-container">
+						<div class="foto">
+							
+								<div class="foto__img">
+									<img src="img/content/main-foto.jpg" alt="" class="foto__pic">
+								</div>
+							
+						</div>
+						<div class="aboutme">
+							<div class="aboutme__title">
+								<h1>Обо мне</h1>
+							</div>
+							<div class="aboutme__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsum voluptates quas, deleniti ex vitae veritatis facilis perspiciatis dignissimos non laborum dolorem. Rerum facilis ipsum sapiente veniam nobis inventore asperiores!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsum nemo aspernatur natus iusto fugit illo ullam facilis odio rerum laborum architecto nulla numquam, provident accusantium blanditiis explicabo reiciendis quae!
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ipsum nemo aspernatur natus iusto fugit illo ullam facilis odio rerum laborum architecto nulla numquam, provident accusantium blanditiis explicabo reiciendis quae!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							<div class="download">
+								<a href="#" class="download__link">
+									<i class="fa fa-download" aria-hidden="true"></i>
+									<span class="download__text">Скачать резюме</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__left">
+				<div class="copyright">
+					© Дизайн сайта был разработан в школе LoftSchool
+				</div>
+			</div>
+			<div class="footer__right">
+				<ul class="social__list">
+					<li class="social__list-item"><a href="http://facebook.com" class="social__list-link">facebook</a></li>
+					<li class="social__list-item"><a href="http://vk.com" class="social__list-link">vkontakte</a></li>
+					<li class="social__list-item"><a href="http://twitter.com" class="social__list-link">twitter</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
