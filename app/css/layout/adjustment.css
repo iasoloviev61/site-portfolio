@@ -1,0 +1,72 @@
+/* main layout */
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	min-width: 940px;
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.empty {
+	height: 50px;
+}
+
+.section .container {
+	min-height: 470px;
+}
+/* header layout */
+
+.header__left {
+	float: left;
+	width: 50%;
+}
+.header__right {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+/* sidebar layout */
+.aside {
+	float: left;
+	width: 23%;
+}
+/* about me layout */
+.aboutme {
+	float: right;
+	width: 70%;
+	margin-bottom: 70px;
+}
+
+.aboutme__left {
+	float: left;
+	width: 35%;
+}
+
+.aboutme__right {
+	float: right;
+	width: 56%;
+}
+
+/* career */
+.career {
+	float: right;
+	width: 75%;
+}
+.career__left {
+	float: left;
+	width: 40%;
+}
+
+.career__right {
+	float: right;
+	width: 60%;
+}
+
+/* portfolio layout */
+.portfolio {
+	float: right;
+	width: 75%;
+}

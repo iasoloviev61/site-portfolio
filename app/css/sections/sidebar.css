@@ -1,0 +1,24 @@
+.nav__item {
+	display: block;
+	}
+.nav__link {
+	display: block;
+	font-size: 18px;
+	color: #414141;
+	line-height: 1.33;
+	text-align: right;
+	padding: 11px 24px 11px 0;
+	}
+.nav__text {
+	margin-left: 10px;
+}
+
+.nav__link-active {
+	color: #33c1e3;
+	font: 18px 'fira_sansbold';
+	border-right: 6px solid #33c1e3;
+}
+
+.nav__link:hover {
+	color: #33c1e3;
+}

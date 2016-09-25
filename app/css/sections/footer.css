@@ -1,0 +1,63 @@
+.footer {
+	height: 50px;
+	margin-top: -50px;
+	background-color: rgb(65, 65, 65);
+	position: relative;
+	min-width: 960px;
+	clear: both;
+}
+
+.footer__left {
+	float: left;
+}
+
+.footer__right {
+	float: right;
+}
+
+.copyright {
+	line-height: 2.85;
+	color:  rgb(156, 156, 156);
+	font:  14px 'fira_sanslight';
+	margin-top: 18px;
+	}
+.social__list {
+	padding-top: 10px;
+}
+.social__item {
+	display: inline-block;
+	text-indent: -10000px;
+}
+
+.social__link {
+		height: 31px;
+		width: 32px;
+		display: block;
+}
+.social__link-fb {
+	background: url('../../img/icons/facebook.png');
+	background-repeat:  no-repeat;
+	}
+
+.social__link-fb:hover {
+	background: url('../../img/icons/facebook_active.png');
+	background-repeat:  no-repeat;
+}
+.social__link-vk {
+	background: url('../../img/icons/vk.png');
+	background-repeat:  no-repeat;
+}
+.social__link-vk:hover {
+	background: url('../../img/icons/vk_active.png');
+	background-repeat:  no-repeat;
+}
+.social__link-tw {
+	background: url('../../img/icons/twitter.png');
+	background-repeat:  no-repeat;
+}
+
+.social__link-tw:hover {
+	background: url('../../img/icons/twitter_active.png');
+	background-repeat:  no-repeat;
+	
+}

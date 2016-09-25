@@ -1,0 +1,141 @@
+.header {
+	background-color: #ffffff;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.header .container {
+	height: 80px;
+}
+
+
+.user {
+	margin-top: 10px;
+}
+.user__avatar {
+	border:  2px solid #c5c5c5;
+	border-radius: 50%;
+	width: 62px;
+	height: 62px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.user__avatar-img {
+	width: 100%;
+	height: 100%;
+}
+
+.user__name {
+	color:  #414141;
+	font-size:  18px;
+	line-height: 1.55;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.contact {
+	position: relative;
+	margin-top: 30px;
+	display: inline-block;
+}
+.contact__link {
+	color: #32c3e5;
+	font: 18px 'fira_sansbold';
+	line-height: 1.55;
+	border-bottom: 1px dashed #32c3e5;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 13px;
+}
+
+.contact__list {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	right: -60px;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	background: #fff;
+	/* overflow: hidden; */
+	}
+
+.contact__list::before,
+.contact__list::after{
+   content: '';
+   border: solid transparent;
+   position: absolute;
+   left: 50%;
+   margin-left: -13px;
+   top: -26px;
+   width: 0;
+   z-index: 150;
+}
+
+.contact__list::before {
+	border-bottom-color: #dedede;
+    border-width: 13px;
+}
+
+.contact__list::after {
+border-bottom-color: #fff;
+   border-width: 14px;
+   margin-left: -14px;
+}
+.contact__item {
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+	
+} .contact__item:last-child {
+	border-bottom: none;
+}
+.contact__item__link{
+	display: block;
+	padding: 10px 20px 10px 50px;
+	position: relative;
+	
+	}
+.contact__icon {
+	display: inline-block;
+	background-image: url('../../img/icons/mail_icon.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 16px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	text-align: center;
+	margin-right: 20px;
+	}
+
+.contact__icon-tel {
+	background-image: url('../../img/icons/tel_icon.png');
+	
+}
+
+.contact__icon-skype {
+	background-image: url('../../img/icons/skype_icon.png');
+}
+
+.contact__content {
+	color: #414141;
+	font:  18px 'fira_sanslight';
+}
+
+.contact__link:hover {
+	color: #e85f61;
+	border-color: #e85f61;
+	}
+
+.contact:hover .contact__list {
+	display: block;
+	-webkit-transition: all 10s;
+	-o-transition: all 10s;
+	transition: all 10s;
+}
+.contact__item__link .contact__content:hover {
+
+	color: #e85f61;
+}

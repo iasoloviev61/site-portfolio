@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
 	<title>about me</title>
+	<!-- normalize.css-->
+	<link rel="stylesheet" href="css/normalize.css">
 	<!--fonts -->
 	<link rel="stylesheet" href="css/font/firasans.css">
 	<link rel="stylesheet" href="css/font/fontawesome.css">
+	<!-- main-->
+	<link rel="stylesheet" href="css/main.css">
 	<!-- layout-->
 	<link rel="stylesheet" href="css/layout/adjustment.css">
 	<!-- sections-->
@@ -13,57 +17,76 @@
 	<link rel="stylesheet" href="css/sections/content.css">
 	<link rel="stylesheet" href="css/sections/sidebar.css">
 	<link rel="stylesheet" href="css/sections/footer.css">
-	<!-- main-->
-	<link rel="stylesheet" href="css/main.css">
+	
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="header__left">
 					<div class="user">
-						<img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar">
-						<span class="user__name">Игорь Соловьёв</span>
+						<div class="user__avatar">
+							<img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img">
+						</div>
+						<div class="user__name">Игорь Соловьёв</div>
 					</div>
 				</div>
 				<div class="header__right">
-					<a href="#" class="contact__link">Мои контакты</a>
-					<ul class="contact__list">
-						<li class="contact__item"><a href="#" class="contact__link"></a></li>
-						<li class="contact__item"><a href="#" class="contact__link"></a></li>
-						<li class="contact__item"><a href="#" class="contact__link"></a></li>
-					</ul>
+					<div class="contact">
+						<a href="#" class="contact__link">Мои контакты</a>
+						<ul class="contact__list">
+							<li class="contact__item">
+								<a href="mailto:iasoloviev@gmail.com" class="contact__item__link">
+									<span class="contact__icon contact__icon-mail"></span>
+									<span class="contact__content">iasoloviev@gmail.com</span>
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="tel:+79191049057" class="contact__item__link">
+									<span class="contact__icon contact__icon-tel"></span>
+									<span class="contact__content">+79191049057
+																		</span>
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="#" class="contact__item__link">
+									<span class="contact__icon contact__icon-skype"></span>
+									<span class="contact__content">isolovyioff</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
 		<section class="section">
-			<div class="container">
+			<div class="container clearfix">
 				<aside class="aside">
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item nav__item-active">
-								<a href="#" class="nav__link">
+								<a href="#" class="nav__link nav__link-active">
 								<i class="fa fa-user-secret" aria-hidden="true"></i>
-									Обо мне
+								<span class="nav__text">	Обо мне </span>
 								</a>
 							</li>
 							<li class="nav__item">
 								<a href="career.html" class="nav__link">
 								<i class="fa fa-rocket" aria-hidden="true"></i>	
-									Карьерный путь
+								<span class="nav__text">	Карьерный путь </span>
 								</a>
 							</li>
 							<li class="nav__item">
 								<a href="portfolio.html" class="nav__link">
 								<i class="fa fa-briefcase" aria-hidden="true"></i>
-									Портфолио
+								<span class="nav__text">	Портфолио </span>
 								</a>
 							</li>
 						</ul>
 					</nav>
 				</aside>
 				<main class="aboutme">
-					<div class="aboutme-container">
+					<div class="container clearfix">
 						<div class="aboutme__left">
 							
 								<div class="aboutme__img">
@@ -71,9 +94,11 @@
 								</div>
 							
 						</div>
-						<div class="aboutme__right">
-							<div class="aboutme__title">
-								<h1>Обо мне</h1>
+						<div class="aboutme__right clearfix">
+							<div class="aboutme__header">
+								<h1 class="aboutme__header-title">
+									Обо мне
+								</h1>
 							</div>
 							<div class="aboutme__text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsum voluptates quas, deleniti ex vitae veritatis facilis perspiciatis dignissimos non laborum dolorem. Rerum facilis ipsum sapiente veniam nobis inventore asperiores!</p>
@@ -92,9 +117,10 @@
 				</main>
 			</div>
 		</section>
+	<div class="empty"></div>
 	</div>
 	<footer class="footer">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="footer__left">
 				<div class="copyright">
 					© Дизайн сайта был разработан в школе LoftSchool
@@ -103,13 +129,13 @@
 			<div class="footer__right">
 				<ul class="social__list">
 					<li class="social__item">
-						<a href="https://www.facebook.com/profile.php?id=100001897171985" class="social__link">facebook</a>
+						<a href="https://www.facebook.com/profile.php?id=100001897171985" class="social__link social__link-fb">facebook</a>
 					</li>
 					<li class="social__item">
-						<a href="https://vk.com/id3040974" class="social__link">vkontakte</a>
+						<a href="https://vk.com/id3040974" class=" social__link social__link-vk">vkontakte</a>
 					</li>
 					<li class="social__item">
-						<a href="http://twitter.com" class="social__link">twitter</a>
+						<a href="http://twitter.com" class=" social__link social__link-tw">twitter</a>
 					</li>
 				</ul>
 			</div>
