@@ -34,7 +34,7 @@ a {
 	content: "";
 }
 
-.clearfix: after {
+.clearfix::after {
 	clear: both;
 }
 
