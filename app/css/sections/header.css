@@ -21,10 +21,14 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 12px;
+	background-image: url('../../img/content/main-foto.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .user__avatar-img {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 }
 
 .user__name {
