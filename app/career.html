@@ -2,7 +2,10 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>about me</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>career</title>
+	<meta name="description" content="site portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- normalize.css-->
 	<link rel="stylesheet" href="css/layout/normalize.css">
 	<!--fonts -->
@@ -23,13 +26,20 @@
 	
 </head>
 <body>
+	<!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 	<div class="wrapper">
 		<header class="header">
 			<div class="container clearfix">
 				<div class="header__left">
 					<div class="user">
-						<div class="user__avatar">
-							<!-- <img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img"> -->
+						<div class="user__avatar" style=" 
+								background-image: url('../../img/content/main-foto.jpg');
+								background-position: 50% 50%;
+								background-size: cover;
+								background-repeat: no-repeat">
+							<img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img">
 						</div>
 						<div class="user__name">Игорь Соловьёв</div>
 					</div>
@@ -37,30 +47,30 @@
 				<div class="header__right">
 					<div class="contact">
 						<a href="#" class="contact__link">Мои контакты</a>
-						<ul class="contact__list">
-							<li class="contact__item">
-								<a href="mailto:iasoloviev@gmail.com" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/mail_icon.png" alt="" class="contact__icon-pic">
+						<ul class="contact-popup__list">
+							<li class="contact-popup__item">
+								<a href="mailto:iasoloviev@gmail.com" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/mail_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">iasoloviev@gmail.com</span>
+									<span class="contact-popup__content">iasoloviev@gmail.com</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="tel:+79191049057" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/tel_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="tel:+79191049057" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/tel_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">+79191049057
+									<span class="contact-popup__content">+79191049057
 																		</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="#" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/skype_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="#" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/skype_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">isolovyioff</span>
+									<span class="contact-popup__content">isolovyioff</span>
 								</a>
 							</li>
 						</ul>
@@ -100,38 +110,49 @@
 							<h2 class="career__header-title">Карьерный путь</h2>
 						</div>
 						<div class="career__left">
-							<div class="career__img">
-								<img src="img/content/career.jpg" alt="" class="career__img-item">
+							<div class="career__ill" style="background-image: url('../../img/content/career.jpg');
+															background-position: 50% 50%;
+															background-size: cover;
+															background-repeat: no-repeat">
+								<img src="img/content/career.jpg" alt="" class="career__img">
 							</div>
 						</div>
 						<div class="career__right">
 							<ul class="career__list">
 								<li class="career__item">
 									<div class="career_content">
-										<h4 class="career__item-title">ООО "звездный путь"</h4>
-										<p class="career__position">Системный администратор</p>
-										<p class="career__date">2015 - по настоящее время</p>
+										<div class="career__item-title">ООО "звездный путь"</div>
+										<div class="career__position">Системный администратор</div>
+										<div class="career__year">2015</div>
+										<div class="career__date">2015 - по настоящее время</div>
+										
 									</div>
 								</li>
 								<li class="career__item">
 									<div class="career_content">
-										<h4 class="career__item-title">ООО "звездный путь"</h4>
-										<p class="career__position">Системный администратор</p>
-										<p class="career__date">2015 - по настоящее время</p>
+										<div class="career__item-title">ООО "звездный путь"</div>
+										<div class="career__position">Системный администратор</div>
+										<div class="career__year">2015</div>
+										<div class="career__date">2015 - по настоящее время</div>
+										
 									</div>
 								</li>
 								<li class="career__item">
 									<div class="career_content">
-										<h4 class="career__item-title">ООО "звездный путь"</h4>
-										<p class="career__position">Системный администратор</p>
-										<p class="career__date">2015 - по настоящее время</p>
+										<div class="career__item-title">ООО "звездный путь"</div>
+										<div class="career__position">Системный администратор</div>
+										<div class="career__year">2015</div>
+										<div class="career__date">2015 - по настоящее время</div>
+										
 									</div>
 								</li>
 								<li class="career__item">
 									<div class="career_content">
-										<h4 class="career__item-title">ООО "звездный путь"</h4>
-										<p class="career__position">Системный администратор</p>
-										<p class="career__date">2015 - по настоящее время</p>
+										<div class="career__item-title">ООО "звездный путь"</div>
+										<div class="career__position">Системный администратор</div>
+										<div class="career__year">2015</div>
+										<div class="career__date">2015 - по настоящее время</div>
+										
 									</div>
 								</li>
 							</ul>

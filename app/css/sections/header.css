@@ -21,15 +21,11 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 12px;
-	background-image: url('../../img/content/main-foto.jpg');
-	background-position: 50% 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+	}
 .user__avatar-img {
+	display: none;
 	width: 100%;
-	/* height: 100%; */
-}
+	}
 
 .user__name {
 	color:  #414141;
@@ -54,7 +50,7 @@
 }
 
 /* dropdown menu contact */
-.contact__list {
+.contact-popup__list {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -64,8 +60,8 @@
 	background: #fff;
 	}
 
-.contact__list::before,
-.contact__list::after{
+.contact-popup__list::before,
+.contact-popup__list::after{
    content: '';
    border: solid transparent;
    position: absolute;
@@ -76,31 +72,31 @@
    z-index: 150;
 }
 
-.contact__list::before {
+.contact-popup__list::before {
 	border-bottom-color: #dedede;
     border-width: 13px;
 }
 
-.contact__list::after {
+.contact-popup__list::after {
 border-bottom-color: #fff;
    border-width: 14px;
    margin-left: -14px;
 }
-.contact__item {
+.contact-popup__item {
 	display: block;
 	border-bottom: 1px solid #dedede;
 	
-} .contact__item:last-child {
+} .contact-popup__item:last-child {
 	border-bottom: none;
 }
-.contact__item__link{
+.contact-popup__link{
 	display: block;
 	padding: 10px 20px 10px 50px;
 	position: relative;
 	text-align: left;
 	}
 
-.contact__icon {
+.contact-popup__ill {
 	display: inline-block;
 	position: absolute;
 	top: 0px;
@@ -109,7 +105,7 @@ border-bottom-color: #fff;
 	width: 40px;
 		}
 
-.contact__icon-pic {
+.contact-popup__icon {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -118,7 +114,7 @@ border-bottom-color: #fff;
 	margin:  auto;
 }
 
-.contact__content {
+.contact-popup__content {
 	color: #414141;
 	font:  18px 'fira_sanslight';
 }
@@ -128,10 +124,9 @@ border-bottom-color: #fff;
 	border-color: #e85f61;
 	}
 
-.contact:hover .contact__list {
+.contact:hover .contact-popup__list {
 	display: block;
 	}
-.contact__item__link .contact__content:hover {
-	font-family: 'fira_sansbold';
+.contact-popup__link .contact-popup__content:hover {
 	color: #e85f61;
 }

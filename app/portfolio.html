@@ -2,7 +2,10 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>about me</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>portfolio</title>
+	<meta name="description" content="site portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- normalize.css-->
 	<link rel="stylesheet" href="css/layout/normalize.css">
 	<!--fonts -->
@@ -23,13 +26,21 @@
 	
 </head>
 <body>
+	<!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 	<div class="wrapper">
+	
 		<header class="header">
 			<div class="container clearfix">
 				<div class="header__left">
 					<div class="user">
-						<div class="user__avatar">
-							<!-- <img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img"> -->
+						<div class="user__avatar" style=" 
+								background-image: url('../../img/content/main-foto.jpg');
+								background-position: 50% 50%;
+								background-size: cover;
+								background-repeat: no-repeat">
+							<img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img">
 						</div>
 						<div class="user__name">Игорь Соловьёв</div>
 					</div>
@@ -37,30 +48,30 @@
 				<div class="header__right">
 					<div class="contact">
 						<a href="#" class="contact__link">Мои контакты</a>
-						<ul class="contact__list">
-							<li class="contact__item">
-								<a href="mailto:iasoloviev@gmail.com" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/mail_icon.png" alt="" class="contact__icon-pic">
+						<ul class="contact-popup__list">
+							<li class="contact-popup__item">
+								<a href="mailto:iasoloviev@gmail.com" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/mail_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">iasoloviev@gmail.com</span>
+									<span class="contact-popup__content">iasoloviev@gmail.com</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="tel:+79191049057" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/tel_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="tel:+79191049057" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/tel_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">+79191049057
+									<span class="contact-popup__content">+79191049057
 																		</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="#" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/skype_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="#" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/skype_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">isolovyioff</span>
+									<span class="contact-popup__content">isolovyioff</span>
 								</a>
 							</li>
 						</ul>
@@ -95,13 +106,13 @@
 					</nav>
 				</aside>
 				<main class="portfolio">
-					<div class="portfolio__title">
-						<h2 class="portfolio__title-item">Портфолио</h2>
+					<div class="portfolio__header">
+						<h2 class="portfolio__header-title">Портфолио</h2>
 					</div>
-					<div class="portfolio__galary">
+					<div class="portfolio__gallery">
 						<a href="#" class="portfolio__item">
-							<div class="company__img">
-								<img src="img/content/dealsapp.jpg" alt="deals app" class="portfolio__img-pic">
+							<div class="company__ill">
+								<img src="img/content/dealsapp.jpg" alt="deals app" class="company__img">
 							</div>
 							<div class="company_description">
 								<div class="company__name">
@@ -119,8 +130,8 @@
 							</div>
 						</a>
 						<a href="#" class="portfolio__item">
-							<div class="company__img">
-								<img src="img/content/deam.jpg" alt="dream scapes" class="portfolio__img-pic">
+							<div class="company__ill">
+								<img src="img/content/deam.jpg" alt="dream scapes" class="company__img">
 							</div>
 							<div class="company_description">
 								<div class="company__name">
@@ -138,8 +149,8 @@
 							</div>
 						</a>
 						<a href="#" class="portfolio__item">
-							<div class="company__img">
-								<img src="img/content/studio.jpg" alt="creative studio" class="portfolio__img-pic">
+							<div class="company__ill">
+								<img src="img/content/studio.jpg" alt="creative studio" class="company__img">
 							</div>
 							<div class="company_description">
 								<div class="company__name">
@@ -157,8 +168,8 @@
 							</div>
 						</a>
 						<a href="#" class="portfolio__item">
-							<div class="company__img">
-								<img src="img/content/frog.jpg" alt="studio frog" class="portfolio__img-pic">
+							<div class="company__ill">
+								<img src="img/content/frog.jpg" alt="studio frog" class="company__img">
 							</div>
 							<div class="company_description">
 								<div class="company__name">
@@ -176,8 +187,8 @@
 							</div>
 						</a>
 						<a href="#" class="portfolio__item">
-							<div class="company__img">
-								<img src="img/content/carbonara.jpg" alt="carbonara" class="portfolio__img-pic">
+							<div class="company__ill">
+								<img src="img/content/carbonara.jpg" alt="carbonara" class="company__img">
 							</div>
 							<div class="company_description">
 								<div class="company__name">
@@ -201,6 +212,7 @@
 			</div>
 		</section>
 	<div class="empty"></div>
+
 	</div>
 	<footer class="footer">
 		<div class="container clearfix">

@@ -2,7 +2,10 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>about me</title>
+	<meta name="description" content="site portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- normalize.css-->
 	<link rel="stylesheet" href="css/layout/normalize.css">
 	<!--fonts -->
@@ -23,13 +26,21 @@
 	
 </head>
 <body>
+	<!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 	<div class="wrapper">
+		
 		<header class="header">
 			<div class="container clearfix">
 				<div class="header__left">
 					<div class="user">
-						<div class="user__avatar">
-							<!-- <img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img"> -->
+						<div class="user__avatar" style=" 
+								background-image: url('../../img/content/main-foto.jpg');
+								background-position: 50% 50%;
+								background-size: cover;
+								background-repeat: no-repeat">
+							<img src="img/content/my_foto.jpg" alt="Igor Soloviev photo" class="user__avatar-img">
 						</div>
 						<div class="user__name">Игорь Соловьёв</div>
 					</div>
@@ -37,30 +48,30 @@
 				<div class="header__right">
 					<div class="contact">
 						<a href="#" class="contact__link">Мои контакты</a>
-						<ul class="contact__list">
-							<li class="contact__item">
-								<a href="mailto:iasoloviev@gmail.com" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/mail_icon.png" alt="" class="contact__icon-pic">
+						<ul class="contact-popup__list">
+							<li class="contact-popup__item">
+								<a href="mailto:iasoloviev@gmail.com" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/mail_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">iasoloviev@gmail.com</span>
+									<span class="contact-popup__content">iasoloviev@gmail.com</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="tel:+79191049057" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/tel_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="tel:+79191049057" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/tel_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">+79191049057
+									<span class="contact-popup__content">+79191049057
 																		</span>
 								</a>
 							</li>
-							<li class="contact__item">
-								<a href="#" class="contact__item__link">
-									<span class="contact__icon">
-										<img src="img/icons/skype_icon.png" alt="" class="contact__icon-pic">
+							<li class="contact-popup__item">
+								<a href="#" class="contact-popup__link">
+									<span class="contact-popup__ill">
+										<img src="img/icons/skype_icon.png" alt="" class="contact-popup__icon">
 									</span>
-									<span class="contact__content">isolovyioff</span>
+									<span class="contact-popup__content">isolovyioff</span>
 								</a>
 							</li>
 						</ul>
@@ -92,18 +103,21 @@
 								</a>
 							</li>
 						</ul>
+
 					</nav>
 				</aside>
 				<main class="aboutme">
-					<!-- <div class="container clearfix"> -->
-						<div class="aboutme__left">
+					<div class="aboutme__left">
 							
-								<div class="aboutme__img">
-									<!-- <img src="img/content/main-foto.jpg" alt="" class="aboutme__img-item"> -->
+								<div class="aboutme__ill" style="background-image: url('../../img/content/main-foto.jpg');
+																background-position: 50% 50%;
+																background-size: cover;
+																background-repeat: no-repeat">
+									<img src="img/content/main-foto.jpg" alt="" class="aboutme__photo">
 								</div>
 							
 						</div>
-						<div class="aboutme__right clearfix">
+						<div class="aboutme__right">
 							<div class="aboutme__header">
 								<h1 class="aboutme__header-title">
 									Обо мне
@@ -121,12 +135,14 @@
 									<span class="download__text">Скачать резюме</span>
 								</a>
 							</div>
+							
 						</div>
 					<!-- </div> -->
 				</main>
 			</div>
 		</section>
 	<div class="empty"></div>
+	
 	</div>
 	<footer class="footer">
 		<div class="container clearfix">

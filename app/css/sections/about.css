@@ -1,21 +1,17 @@
 /* about me page */
-.aboutme__img {
+.aboutme__ill {
 	width: 220px;
 	height: 220px;
 	overflow: hidden;
 	border: 5px solid #fff;
 	border-radius: 50%;
 	margin: 0 auto;
-	background-image: url('../../img/content/main-foto.jpg');
-	background-position: 50% 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+	}
 
-.aboutme__img-item {
+.aboutme__photo {
 	width: 100%;
-
-	/* height: 100%; */
+	display: none;
+	
 }
 
 .aboutme__header {
@@ -71,11 +67,12 @@ height:0px
 width: 7px;
 }
 .download {
-	float: right;
+	
+	text-align: right;
 	}
 
 .download__link {
-	display: block;
+	display: inline-block;
 	position: relative;
 	padding: 8px 15px 7px 11px;
 	color: #e85f61;

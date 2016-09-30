@@ -2,7 +2,8 @@
 .wrapper {
 	min-height: 100%;
 	position: relative;
-	min-width: 940px;
+	min-width: 960px;
+	overflow: hidden;
 }
 .container{
 	max-width: 940px;
@@ -10,6 +11,9 @@
 	position: relative;
 }
 
+/* .maincontent {
+	padding-bottom: 50px;
+} */
 .empty {
 	height: 50px;
 }
@@ -57,12 +61,12 @@
 }
 .career__left {
 	float: left;
-	width: 40%;
+	width: 37%;
 }
 
 .career__right {
 	float: right;
-	width: 60%;
+	width: 53%;
 }
 
 /* portfolio layout */

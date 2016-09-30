@@ -1,20 +1,20 @@
 /* career page */
-.career__img {
+.career__ill {
 	width: 220px;
 	height: 220px;
 	overflow: hidden;
 	border-radius: 10px;
 	margin: 0 auto;
+	
 }
 
-.career__img-item {
-	width: 100%;
-	height: 100%;
+.career__img {
+	display: none;
 }
 
 .career__header {
-	margin-bottom: 25px;
-	margin-left: 32px;
+	margin-bottom: 22px;
+	margin-left: 25px;
 }
 .career__header-title {
 	font:  35px 'fira_sansmedium';
@@ -25,27 +25,47 @@
 	font-weight: normal;
 }
 
-/* .career__list {
-	list-style-type: disc;
-} */
-/* .career__item {
-	list-style-type: disc;
-	display: list-item;
-	font: 18px 'fira_sanslight'; 
-	line-height: 1.44;
-	border: 1px solid #f0f0f0;
-	border-radius: 10px;
-  	background-color: rgb(255, 255, 255);
-  	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-	background-color: #fff;
-	padding: 20px 20px;
-	margin-bottom: 20px;
-	} */
 
+.career_content {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 18px;
+  padding: 15px 20px 17px 17px;
+  position: relative;
+  color: #727272;
+  }
 
 .career__item-title {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: 'fira_sansregular'
-
+	font: 21px 'fira_sansregular';
+	line-height: 26px;
+	color: #5a5a5a;
 }
+
+.career__position, .career__date {
+	font: 18px 'fira_sanslight';
+	line-height: 26px;
+	color: #727272;
+}
+.career__year {
+	position: absolute;
+	left: -60px;
+	top: 39%;
+	font: 14px 'fira_sanslight';
+	line-height: 26px;
+}
+
+.career__year::after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #33c1e3;
+	position: absolute;
+	top: 3px;
+	right: -20px;
+	overflow: hidden;
+	border: 1px solid #33c1e3;
+	border-radius: 50%;
+}
+

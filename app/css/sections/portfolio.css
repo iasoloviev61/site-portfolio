@@ -1,9 +1,9 @@
 /* portfolio page */
-.portfolio__title {
-	margin-bottom: 25px;
+.portfolio__header {
+	margin-bottom: 17px;
 	
 }
-.portfolio__title-item {
+.portfolio__header-title {
 	font:  35px 'fira_sansmedium';
 	line-height: 1.28;
 	color:  #414141;
@@ -11,7 +11,7 @@
 	margin-bottom: 0;
 	font-weight: normal;
 }
-.portfolio__galary {/* 
+.portfolio__gallery {/* 
 	text-align: justify; */
 	font-size: 0;
 
@@ -23,10 +23,10 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin-bottom: 16px;
-    max-width: 30.55555555555556%;
+    max-width: 31.42857142857143%;
     vertical-align: top;
-    margin-right: 29px;
+    margin-right: 22px;
+    margin-bottom: 16px;
   }
 
 .portfolio__item:nth-child(3n) {
